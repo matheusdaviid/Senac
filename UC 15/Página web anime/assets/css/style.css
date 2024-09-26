@@ -1,0 +1,30 @@
+body{
+background-color: rgb(17, 16, 16);
+}
+h2{
+font-size: 30px;
+background-color: aliceblue;
+}
+h1{
+font-size: 50px;
+background-color: rgb(241, 23, 23);
+}
+img{
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.capa{
+    width: 100%;
+}
+
+.rem{
+    font-size: 2rem;
+}
+
+.px{
+    font-size: 16px;
+}
+ 
