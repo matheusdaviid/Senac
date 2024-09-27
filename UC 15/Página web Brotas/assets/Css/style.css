@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.logo {
+    width: 150px;
+}
+
+#pagina-home {
+    height: 613px;
+    background: linear-gradient(rgba(17, 17, 15, 0.404), rgba(34, 30, 4, 0.685)), url(../Fotos/banner.png);
+    background-size: cover;
+}
+
+.menu-principal ul {
+    list-style: none;
+}
+
+.menu-principal ul li {
+    display: inline-block;
+}
+
+.menu-principal ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 29px;
+    border: 1px solid transparent;
+    transition: 0.06s ease;
+}
+
+.menu-principal ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+.menu-principal ul li .link-ativo {
+    background: white;
+    color: black;
+}
+
+.categoria {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
