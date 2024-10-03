@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Exemplo</title>
+    <style>
+        /* Estiliza o container que vai usar o Grid */
+        .container {
+            display: grid;
+            /* Ativa o Grid no container */
+            grid-template-columns: 1fr 1fr 1fr;
+            /* Cria três colunas de tamanhos iguais */
+            gap: 20px;
+            /* Espaço entre as colunas e linhas */
+        }
+
+        /* Estiliza as caixas que estarão na grade */
+        .box {
+            background-color: #87ceeb;
+            /* Cor de fundo azul claro */
+            padding: 40px;
+            /* Espaço interno das caixas */
+            text-align: center;
+            /* Centraliza o texto */
+            font-family: Arial, sans-serif;
+            border-radius: 10px;
+            color: white;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Container Grid que contém três itens -->
+    <div class="container">
+        <div class="box">Item 1</div>
+        <div class="box">Item 2</div>
+        <div class="box">Item 3</div>
+    </div>
+</body>
+
+</html>
