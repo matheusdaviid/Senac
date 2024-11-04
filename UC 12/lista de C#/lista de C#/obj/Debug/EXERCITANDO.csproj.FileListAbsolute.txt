@@ -1,0 +1,7 @@
+C:\Users\matheus.david\source\repos\lista de C#\lista de C#\obj\Debug\EXERCITANDO.csproj.AssemblyReference.cache
+C:\Users\matheus.david\source\repos\lista de C#\lista de C#\obj\Debug\EXERCITANDO.csproj.CoreCompileInputs.cache
+C:\Users\matheus.david\source\repos\lista de C#\lista de C#\obj\Debug\lista de C#.exe
+C:\Users\matheus.david\source\repos\lista de C#\lista de C#\obj\Debug\lista de C#.pdb
+C:\Users\matheus.david\source\repos\lista de C#\lista de C#\bin\Debug\lista de C#.exe.config
+C:\Users\matheus.david\source\repos\lista de C#\lista de C#\bin\Debug\lista de C#.exe
+C:\Users\matheus.david\source\repos\lista de C#\lista de C#\bin\Debug\lista de C#.pdb
