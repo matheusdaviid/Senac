@@ -1,0 +1,146 @@
+<script>
+    nome = '';
+    atackPessoa = 15;
+    defesaPessoa = 10;
+    vidaPessoa = 30;
+
+    function caminhoObscuro() {
+        alert("Você entrou em um túnel sombrio,");
+        alert("Você encontrou um baú antigo contendo 3 itens misteriosos: uma katana ancestral, uma armadura encantada e um pergaminho mágico.");
+        escolhaItem = prompt("Qual item você irá pegar?\n\n1- Katana Ancestral \n2- Armadura Encantada \n3- Pergaminho Mágico");
+
+        while (escolhaItem < 1 || escolhaItem > 3) {
+            escolhaItem = prompt("Escolha uma opção válida:\n\n1- Katana Ancestral \n2- Armadura Encantada \n3- Pergaminho Mágico");
+        }
+        return escolhaItem;
+    }
+
+    function pergaminhoMagico() {
+        alert("Você abriu o pergaminho mágico, e sentiu um imenso poder mágico fluir através de você.");
+        alert("Você se sente confiante em sua nova habilidade mágica.");
+        // A história continua após entrar no corredor iluminado
+        alert("Você entra no corredor iluminado por tochas, sentindo o poder do pergaminho crescendo dentro de você.");
+        alert("De repente, o Lith aparece e tenta conjurar uma magia proibida contra você.");
+
+        escolha = prompt("O que você fará? \n\n1- Usar a magia do pergaminho para criar um escudo mágico\n2- Conjurar uma tempestade mágica sobre o Lith");
+
+        if (escolha == "1") {
+            alert("Você cria um escudo mágico poderoso, que bloqueia a magia proibida de Lith.");
+            alert("A magia se dissipa, mas a energia liberada faz as paredes ao redor começarem a desmoronar.");
+            alert("Enquanto a poeira ainda está no ar, você rapidamente concentra seu poder e lança um feitiço que atinge a joia mágica da coroa de Lith.");
+            alert("O círculo mágico de Lith se quebra, e ele se desfaz em cinzas.");
+            alert("Parabens jogador, você completou o desafio, um circulo magico de teletransporte se cria a sua frente, você avança em direção a ele")
+            alert("Após abrir os olhos, você se encontra fora da caverna e presencia a estrutura da dungeos se fechando para sempre...")
+            alert("Fim de jogo, obrigado por jogar")
+        } else if (escolha == "2") {
+            alert("Você conjura uma tempestade mágica que envolve toda a sala.");
+            alert("A força da tempestade é tão grande que Lith não consegue se defender, e sua joia mágica é destruída.");
+            alert("Lith se desfaz em cinzas, e você sai vitorioso.");
+            alert("Parabens jogador, você completou o desafio, um circulo magico de teletransporte se cria a sua frente, você avança em direção a ele")
+            alert("Após abrir os olhos, você se encontra fora da caverna e presencia a estrutura da dungeos se fechando para sempre...")
+            alert("Fim de jogo, obrigado por jogar")
+        } else {
+            alert("Opção inválida, você perde seu turno! Lith ataca novamente!");
+        }
+    }
+
+    function corredorGélido() {
+        alert("Você entrou em um corredor gélido, que destemor!");
+        alert("Agora você vê o motivo do frio intenso... HÁ UM LITH DIANTE DE VOCÊ! Um esqueleto zumbi que conjura magia está pronto para enfrentar você...");
+
+        atackLith = 20;
+        defesaLith = 15;
+        vidaLith = 30;
+
+        alert("- Lith -\n\nVida: " + vidaLith + "\nDefesa: " + defesaLith + "\nAtaque: " + atackLith);
+
+        escolha = prompt("O que você fará? \n\n1- Atacar o Lith com a habilidade especial da katana \n2- Se defender entre os pilares da sala e esperar para contra-atacar");
+
+        if (escolha == "1") {
+            let danoEspecial = 10;
+            let danoTotal = atackPessoa + danoEspecial;
+            defesaLith = defesaLith - danoTotal;
+            if (defesaLith < 0) {
+                defesaLith = 0;
+            }
+            alert("Você atacou o Lith com a habilidade especial da katana! O dano causado foi " + danoTotal + ".");
+        } else if (escolha == "2") {
+            alert("Você se defendeu entre os pilares da sala e esperou a magia do Lith. A magia causou um desmoronamento entre os pilares.");
+            alert("Mas você se esquivou entre a poeira e conseguiu contra-atacar!");
+            let defesaTotal = defesaPessoa;
+            atackPessoa = (atackPessoa - defesaLith) * 2;
+            vidaLith = vidaLith - atackPessoa;
+            alert("Você contra-atacou o Lith! O dano total causado foi " + atackPessoa + ".");
+        } else {
+            alert("Opção inválida, você perde seu turno!");
+        }
+
+        alert("Após seu ataque, o Lith tem " + vidaLith + " de vida restante.");
+
+        if (vidaLith <= 0) {
+            alert("Parabéns! Você derrotou o Lith.");
+            return;
+        }
+
+        alert("O Lith se levanta e, com um gesto sombrio, começa a conjurar uma magia proibida invocando os cadáveres de caçadores caídos presentes na sala para lutar contra você.");
+        alert("Um grupo de 6 mortos-vivos está vindo em sua direção, prontos para o combate.");
+        alert("Você ativa sua habilidade única Belzebu e devora os cadáveres à frente, recuperando suas forças e se concentrando novamente no Lith.");
+        alert("Enquanto você lutava com os cadáveres, o Lith carregava sua magia do Abismo.");
+        alert("Um enorme círculo mágico está prestes a disparar sobre você e dizimar tudo ao seu redor com a imensa quantidade de magia.");
+        alert("Transmitindo suas últimas forças para a katana, você a lança em um feixe de magia, atingindo a pedra mágica da coroa do Lith, fazendo com que o círculo se quebre e seu oponente se desfaça em cinzas.");
+        alert("Parabens jogador, você completou o desafio, um circulo magico de teletransporte se cria a sua frente, você avança em direção a ele")
+        alert("Após abrir os olhos, você se encontra fora da caverna e presencia a estrutura da dungeos se fechando para sempre...")
+        alert("Fim de jogo, obrigado por jogar")
+    }
+
+    function corredorGélidoComArmadura() {
+        alert("Você entrou em um corredor gélido, que destemor!");
+        alert("Agora você vê o motivo do frio intenso... HÁ UM LITH DIANTE DE VOCÊ! Um esqueleto zumbi que conjura magia está pronto para enfrentar você...");
+
+        atackLith = 20;
+        defesaLith = 15;
+        vidaLith = 30;
+
+        alert("- Lith -\n\nVida: " + vidaLith + "\nDefesa: " + defesaLith + "\nAtaque: " + atackLith);
+
+        alert("O Lith dispara um orbe obscuro em sua direção!");
+        alert("O orbe te acerta, mas sua armadura de mithril dispersa a magia.");
+        alert("Você aproveita a fumaça que se formou para se esquivar e, em um único golpe, esmaga o crânio do Lith e sua joia na coroa, fazendo com que seu oponente se desfaça em cinzas.");
+        alert("Parabens jogador, você completou o desafio, um circulo magico de teletransporte se cria a sua frente, você avança em direção a ele")
+        alert("Após abrir os olhos, você se encontra fora da caverna e presencia a estrutura da dungeos de fechando para sempre...")
+        alert("Fim de jogo, obrigado por jogar")
+    }
+
+    nome = prompt("Bem-vindo ao Mundo Isekai! Qual é o seu nome?");
+    alert("Olá " + nome + ", seja bem-vindo! Você foi invocado para um mundo de monstros, mistérios e magia pela Deusa. Sua missão é se fortalecer e derrotar o rei demônio.");
+    alert("Você se encontra em uma Dungeon remota, longe da civilização. À sua direita, há um corredor obscuro, e à sua esquerda, um corredor iluminado por tochas.");
+    alert(nome + ", aqui estão seus atributos:\n\nAtaque: " + atackPessoa + "\nDefesa: " + defesaPessoa + "\nVida: " + vidaPessoa);
+
+    escolha = prompt("Qual será sua decisão?\n\n1- Corredor direito, caminho obscuro e estreito. \n2- Corredor esquerdo, corredor iluminado por tochas.");
+
+    if (escolha == "1") {
+        item = caminhoObscuro();
+        if (item == "1") {
+            atackPessoa = atackPessoa + 5;
+            alert("Ao pegar a katana ancestral, você se sente muito mais forte!");
+            alert("Seu ataque aumentou! \n\nAtaque: " + atackPessoa + "\nDefesa: " + defesaPessoa + "\nVida: " + vidaPessoa);
+            alert("Você segue em frente e o clima vai ficando gélido...");
+            corredorGélido();
+        } else if (item == "2") {
+            defesaPessoa = defesaPessoa + 10;
+            alert("Ao vestir a armadura encantada, você se sente protegido e fortalecido!");
+            alert("Sua defesa aumentou! \n\nAtaque: " + atackPessoa + "\nDefesa: " + defesaPessoa + "\nVida: " + vidaPessoa);
+            alert("Você segue em frente e o clima vai ficando gélido...");
+            corredorGélidoComArmadura();
+        } else if (item == "3") {
+            vidaPessoa = vidaPessoa + 30;
+            alert("Ao aprender o pergaminho mágico, você se sente revitalizado!");
+            alert("Sua vida aumentou! \n\nAtaque: " + atackPessoa + "\nDefesa: " + defesaPessoa + "\nVida: " + vidaPessoa);
+            alert("Você segue em frente e o clima vai ficando gélido...");
+            pergaminhoMagico();
+        }
+    } else if (escolha == "2") {
+        corredorGélido();
+    } else
+        alert("Opção inválida")
+</script>

@@ -1,0 +1,75 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f8f7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h2,
+h4 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #a8b8a4;
+    color: white;
+}
+
+td {
+    border-bottom: 1px solid #ddd;
+}
+
+img {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+}
+
+input[type="number"] {
+    width: 50px;
+}
+
+.remove {
+    color: red;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.remove:hover {
+    color: darkred;
+}
+
+.checkbox {
+    vertical-align: middle;
+    margin-right: 10px;
+}
