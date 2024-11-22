@@ -1,0 +1,131 @@
+/* Estilo geral para remover margens e aplicar uma fonte padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que padding e bordas sejam incluídos no tamanho total */
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+}
+ 
+/* Configuração do corpo da página */
+body {
+    display: flex; /* Usa Flexbox para centralizar conteúdo */
+    justify-content: center; /* Alinha horizontalmente ao centro */
+    align-items: center; /* Alinha verticalmente ao centro */
+    height: 100vh; /* Altura ocupa 100% da janela */
+    background-color: #f4f4f4; /* Cor de fundo neutra */
+}
+ 
+/* Container geral da página */
+.container {
+    position: relative; /* Necessário para posicionamento dos elementos internos */
+    width: 100%;
+    height: 100%;
+}
+ 
+/* Configuração da imagem de fundo */
+.background {
+    position: absolute; /* Faz com que a imagem cubra o container */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz a imagem se ajustar sem distorção */
+    z-index: -1; /* Coloca a imagem atrás do conteúdo */
+}
+ 
+/* Caixa de login */
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza a caixa */
+    background-color: rgba(255, 255, 255, 0.479); /* Fundo branco com mais transparência */
+    padding: 25px; /* Espaço interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    width: 400px; /* Largura maior para atender à solicitação */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+ 
+/* Título principal */
+h1 {
+    display: flex;
+    font-size: 1.5em; /* Tamanho do texto */
+    color: #333; /* Cor escura */
+    margin-bottom: 10px;
+    text-align: left; /* Alinha o título à esquerda */
+}
+ 
+/* Texto descritivo */
+p {
+    color: #666; /* Cinza claro */
+    margin-bottom: 40px;
+    text-align: left; /* Alinha o texto à esquerda */
+    font-family: 'IBM Plex Serif', serif; /* Fonte personalizada */
+}
+ 
+/* Alinhamento dos textos (para "De volta à sua vida", "Escolha uma das opções", etc.) */
+.header-text {
+    width: 90%; /* Garante que o texto se alinha aos inputs */
+    margin: 0 auto; /* Centraliza a margem dentro da caixa */
+}
+ 
+/* Estilo dos formulários */
+form {
+    display: flex;
+    flex-direction: column; /* Campos alinhados verticalmente */
+    gap: 15px; /* Espaço entre os campos */
+}
+ 
+/* Campos de entrada (e-mail e senha) */
+input {
+    padding: 15px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Bordas cinzas */
+    border-radius: 8px; /* Bordas arredondadas */
+    font-size: 1em;
+    width: 100%; /* Mesma largura dos textos acima */
+    margin: 0 auto; /* Centraliza os campos */
+}
+ 
+/* Botões de redes sociais */
+.social-login {
+    display: flex; /* Flexbox para alinhar os botões */
+    margin: 30px 0; /* Espaçamento vertical */
+    width: 95%; /* Alinha com os campos de login */
+    margin: 0 auto 30px; /* Centraliza e adiciona espaçamento inferior */
+    justify-content: space-between; /* Cria espaçamento uniforme entre os botões */
+}
+ 
+.social-button {
+    background-color: #F7F7F7; /* Fundo atualizado para a cor especificada */
+    border: none; /* Remove bordas */
+    cursor: pointer; /* Mostra o cursor de clique */
+    width: 105px; /* Tamanho fixo do botão */
+    height: 60px; /* Altura fixa do botão */
+    display: flex;
+    justify-content: center; /* Centraliza a imagem no botão */
+    align-items: center; /* Centraliza a imagem no botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    padding: 0; /* Remove espaçamento interno */
+}
+ 
+/* Estilo para as imagens dos botões */
+.social-icon {
+    width: 50px; /* Largura ajustada da imagem */
+    height: 50px; /* Altura ajustada da imagem */
+    object-fit: contain; /* Garante que a imagem não seja distorcida */
+}
+ 
+/* Botão para entrar */
+.login-button {
+    background-color: #007bff; /* Azul */
+    color: #fff; /* Texto branco */
+    font-weight: bold; /* Texto em negrito */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Ícone de clique */
+    padding: 15px;
+    width: 60%; /* Comprimento reduzido do botão */
+    margin: 60px ; /* Centraliza o botão */
+    font-family: 'IBM Plex Serif', serif; /* Fonte personalizada */
+}
